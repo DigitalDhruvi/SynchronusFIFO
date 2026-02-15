@@ -12,3 +12,7 @@ the data. The pointers are used to manage the positions for writing and reading 
 When two modules operate at the same frequency but have a phase difference in their clock signals, direct
 data transfer can lead to timing issues. These issues can cause data corruption or loss. A synchronous FIFO
 effectively manages these phase differences, ensuring reliable data transfer between the modules.
+
+Method 1: Uses pointer comparison with an intentional empty slot.
+Method 2: Utilizes an extra bit in pointers to differentiate full/empty based on MSB.
+Method 3: Employs a counter to track the number of items.
