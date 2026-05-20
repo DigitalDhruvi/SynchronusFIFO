@@ -16,8 +16,7 @@ always @(posedge clk or negedge rst_n) begin
 if (!rst_n)
 fifo_counter <= 0;
 else if ((!full && w_en) && (!empty && r_en))
-fifo_counter <= fifo_counter; // No change if both read and write are
-enabled simultaneously
+fifo_counter <= fifo_counter; // No change if both read and write are enabled simultaneously
 else if (!full && w_en)
 fifo_counter <= fifo_counter + 1;
 else if (!empty && r_en)
