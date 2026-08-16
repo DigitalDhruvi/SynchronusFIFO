@@ -1,0 +1,187 @@
+ qverilog -coverage top.sv +read_test
+QuestaSim qrun 2024.2 Utility 2024.05 May 20 2024
+Start time: 21:15:50 on Aug 16,2026
+qrun -coverage top.sv "+read_test" 
+-- Skipping 'vlog top.sv -work ./work...'
+-- Skipping vopt
+Reading pref.tcl
+
+# 2024.2
+
+# vsim "+read_test" -lib ./work -c -do "coverage save -onexit cov_$Sv_Seed.ucdb" -do "run -all; quit -f" -statslog qrun.out/stats_log qrun_opt -appendlog -l qrun.log 
+# Start time: 21:15:50 on Aug 16,2026
+# //  Questa Sim
+# //  Version 2024.2 linux May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.fifo_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.fifo_package(fast)
+# Loading work.top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb_top(fast)
+# Loading /tools/questa-/2024.2/questasim/uvm-1.1d/linux/uvm_dpi.so
+# coverage save -onexit cov_$Sv_Seed.ucdb
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test read_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               read_test               -     @471 
+#   env_o                    env                     -     @478 
+#     agt                    agent                   -     @485 
+#       drv                  driver                  -     @523 
+#         rsp_port           uvm_analysis_port       -     @538 
+#         seq_item_port      uvm_seq_item_pull_port  -     @530 
+#       mon                  monitor                 -     @546 
+#         item_collect_port  uvm_analysis_port       -     @553 
+#       seqr                 sequencer               -     @561 
+#         rsp_export         uvm_analysis_export     -     @568 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @662 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     sb                     scoreboard              -     @492 
+#       item_collect_export  uvm_analysis_imp        -     @499 
+#     sub                    fifo_subscriber         -     @507 
+#       analysis_imp         uvm_analysis_imp        -     @514 
+# --------------------------------------------------------------
+# 
+# UVM_INFO fifo_rd_sequence.sv(8) @ 0: uvm_test_top.env_o.agt.seqr@@seq [fifo_rd_sequence] Fifo read sequence: Inside fifo read on empty sequence
+# UVM_INFO fifo_driver.sv(21) @ 2: uvm_test_top.env_o.agt.drv [DRV] w_en=1 r_en=0 data_in=246
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_monitor.sv(28) @ 6: uvm_test_top.env_o.agt.mon [MON] w_en=1 r_en=0 data_in=246 data_out=0 full=0 empty=1
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_driver.sv(21) @ 10: uvm_test_top.env_o.agt.drv [DRV] w_en=1 r_en=0 data_in=79
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_monitor.sv(28) @ 14: uvm_test_top.env_o.agt.mon [MON] w_en=1 r_en=0 data_in=79 data_out=0 full=0 empty=0
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_driver.sv(21) @ 18: uvm_test_top.env_o.agt.drv [DRV] w_en=1 r_en=0 data_in=100
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_monitor.sv(28) @ 22: uvm_test_top.env_o.agt.mon [MON] w_en=1 r_en=0 data_in=100 data_out=0 full=0 empty=0
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_driver.sv(21) @ 26: uvm_test_top.env_o.agt.drv [DRV] w_en=0 r_en=1 data_in=90
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_monitor.sv(28) @ 30: uvm_test_top.env_o.agt.mon [MON] w_en=0 r_en=1 data_in=90 data_out=0 full=0 empty=0
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_driver.sv(21) @ 34: uvm_test_top.env_o.agt.drv [DRV] w_en=0 r_en=1 data_in=101
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_scoreboard.sv(18) @ 34: uvm_test_top.env_o.sb [SB] ----------------------------------------------
+# UVM_INFO fifo_scoreboard.sv(19) @ 34: uvm_test_top.env_o.sb [SB] Beginning comparison
+# UVM_INFO fifo_scoreboard.sv(21) @ 34: uvm_test_top.env_o.sb [SB] PASS expected=246 actual=246
+# UVM_INFO fifo_scoreboard.sv(22) @ 34: uvm_test_top.env_o.sb [SB] ----------------------------------------------
+# UVM_INFO fifo_monitor.sv(28) @ 38: uvm_test_top.env_o.agt.mon [MON] w_en=0 r_en=1 data_in=101 data_out=246 full=0 empty=0
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_driver.sv(21) @ 42: uvm_test_top.env_o.agt.drv [DRV] w_en=0 r_en=1 data_in=172
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_scoreboard.sv(18) @ 42: uvm_test_top.env_o.sb [SB] ----------------------------------------------
+# UVM_INFO fifo_scoreboard.sv(19) @ 42: uvm_test_top.env_o.sb [SB] Beginning comparison
+# UVM_INFO fifo_scoreboard.sv(21) @ 42: uvm_test_top.env_o.sb [SB] PASS expected=79 actual=79
+# UVM_INFO fifo_scoreboard.sv(22) @ 42: uvm_test_top.env_o.sb [SB] ----------------------------------------------
+# UVM_INFO fifo_monitor.sv(28) @ 46: uvm_test_top.env_o.agt.mon [MON] w_en=0 r_en=1 data_in=172 data_out=79 full=0 empty=0
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_driver.sv(21) @ 50: uvm_test_top.env_o.agt.drv [DRV] w_en=0 r_en=1 data_in=241
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_scoreboard.sv(18) @ 50: uvm_test_top.env_o.sb [SB] ----------------------------------------------
+# UVM_INFO fifo_scoreboard.sv(19) @ 50: uvm_test_top.env_o.sb [SB] Beginning comparison
+# UVM_INFO fifo_scoreboard.sv(21) @ 50: uvm_test_top.env_o.sb [SB] PASS expected=100 actual=100
+# UVM_INFO fifo_scoreboard.sv(22) @ 50: uvm_test_top.env_o.sb [SB] ----------------------------------------------
+# UVM_INFO fifo_monitor.sv(28) @ 54: uvm_test_top.env_o.agt.mon [MON] w_en=0 r_en=1 data_in=241 data_out=100 full=0 empty=1
+# ------------------------------------------------------------------------------------------------------
+# UVM_WARNING fifo_scoreboard.sv(31) @ 54: uvm_test_top.env_o.sb [SB] !!!!!!!!!!!!!!!Attempted read while FIFO empty!!!!!!!!!!!!!!!!
+# UVM_INFO fifo_driver.sv(21) @ 58: uvm_test_top.env_o.agt.drv [DRV] w_en=0 r_en=1 data_in=2
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_monitor.sv(28) @ 62: uvm_test_top.env_o.agt.mon [MON] w_en=0 r_en=1 data_in=2 data_out=100 full=0 empty=1
+# ------------------------------------------------------------------------------------------------------
+# UVM_WARNING fifo_scoreboard.sv(31) @ 62: uvm_test_top.env_o.sb [SB] !!!!!!!!!!!!!!!Attempted read while FIFO empty!!!!!!!!!!!!!!!!
+# UVM_INFO fifo_driver.sv(21) @ 66: uvm_test_top.env_o.agt.drv [DRV] w_en=0 r_en=1 data_in=175
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_monitor.sv(28) @ 70: uvm_test_top.env_o.agt.mon [MON] w_en=0 r_en=1 data_in=175 data_out=100 full=0 empty=1
+# ------------------------------------------------------------------------------------------------------
+# UVM_WARNING fifo_scoreboard.sv(31) @ 70: uvm_test_top.env_o.sb [SB] !!!!!!!!!!!!!!!Attempted read while FIFO empty!!!!!!!!!!!!!!!!
+# UVM_INFO fifo_driver.sv(21) @ 74: uvm_test_top.env_o.agt.drv [DRV] w_en=0 r_en=1 data_in=118
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_monitor.sv(28) @ 78: uvm_test_top.env_o.agt.mon [MON] w_en=0 r_en=1 data_in=118 data_out=100 full=0 empty=1
+# ------------------------------------------------------------------------------------------------------
+# UVM_WARNING fifo_scoreboard.sv(31) @ 78: uvm_test_top.env_o.sb [SB] !!!!!!!!!!!!!!!Attempted read while FIFO empty!!!!!!!!!!!!!!!!
+# UVM_INFO fifo_driver.sv(21) @ 82: uvm_test_top.env_o.agt.drv [DRV] w_en=0 r_en=1 data_in=225
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_monitor.sv(28) @ 86: uvm_test_top.env_o.agt.mon [MON] w_en=0 r_en=1 data_in=225 data_out=100 full=0 empty=1
+# ------------------------------------------------------------------------------------------------------
+# UVM_WARNING fifo_scoreboard.sv(31) @ 86: uvm_test_top.env_o.sb [SB] !!!!!!!!!!!!!!!Attempted read while FIFO empty!!!!!!!!!!!!!!!!
+# UVM_INFO fifo_driver.sv(21) @ 90: uvm_test_top.env_o.agt.drv [DRV] w_en=0 r_en=1 data_in=132
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_monitor.sv(28) @ 94: uvm_test_top.env_o.agt.mon [MON] w_en=0 r_en=1 data_in=132 data_out=100 full=0 empty=1
+# ------------------------------------------------------------------------------------------------------
+# UVM_WARNING fifo_scoreboard.sv(31) @ 94: uvm_test_top.env_o.sb [SB] !!!!!!!!!!!!!!!Attempted read while FIFO empty!!!!!!!!!!!!!!!!
+# UVM_INFO fifo_driver.sv(21) @ 98: uvm_test_top.env_o.agt.drv [DRV] w_en=0 r_en=1 data_in=200
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO fifo_rd_sequence.sv(15) @ 98: uvm_test_top.env_o.agt.seqr@@seq [fifo_rd_sequence] w_en = 0, r_en = 1, data_in = 200
+# UVM_INFO fifo_monitor.sv(28) @ 102: uvm_test_top.env_o.agt.mon [MON] w_en=0 r_en=1 data_in=200 data_out=100 full=0 empty=1
+# ------------------------------------------------------------------------------------------------------
+# UVM_WARNING fifo_scoreboard.sv(31) @ 102: uvm_test_top.env_o.sb [SB] !!!!!!!!!!!!!!!Attempted read while FIFO empty!!!!!!!!!!!!!!!!
+# ------------------------------------------------------------------------------------------------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 108: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   45
+# UVM_WARNING :    7
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DRV]    13
+# [MON]    13
+# [Questa UVM]     2
+# [RNTST]     1
+# [SB]    19
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [fifo_rd_sequence]     2
+# ** Note: $finish    : /tools/questa-/2024.2/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 108 ns  Iteration: 54  Instance: /tb_top
+# Saving coverage database on exit...
+# End time: 21:15:51 on Aug 16,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+End time: 21:15:51 on Aug 16,2026, Elapsed time: 0:00:01
+*** Summary *********************************************
+    qrun: Errors:   0, Warnings:   0
+    vsim: Errors:   0, Warnings:   0
+  Totals: Errors:   0, Warnings:   0
+huytran has logged on pts/233 from 10.0.1.163.

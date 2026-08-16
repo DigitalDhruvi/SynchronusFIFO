@@ -1,0 +1,77 @@
+run -all
+# [DRIVER] : DUT has been Reset
+# ------------------------------------------
+# [GENERATOR] : Operation : 1 iteration : 1
+# [DRIVER] : DATA WRITE  data : 5
+# [MONITOR] : Wr:1 rd:0 din:5 dout:0 full:0 empty:1
+# [SCOREBOARD] : Wr:1 rd:0 din:5 dout:0 full:0 empty:1
+# [SCOREBOARD] : DATA STORED IN QUEUE :5
+# --------------------------------------
+# [GENERATOR] : Operation : 0 iteration : 2
+# [DRIVER] : DATA READ
+# [MONITOR] : Wr:0 rd:1 din:5 dout:5 full:0 empty:0
+# [SCOREBOARD] : Wr:0 rd:1 din:5 dout:5 full:0 empty:0
+# [SCOREBOARD] : DATA MATCH
+# --------------------------------------
+# [GENERATOR] : Operation : 0 iteration : 3
+# [DRIVER] : DATA READ
+# [MONITOR] : Wr:0 rd:1 din:5 dout:5 full:0 empty:1
+# [SCOREBOARD] : Wr:0 rd:1 din:5 dout:5 full:0 empty:1
+# [SCO] : FIFO IS EMPTY
+# --------------------------------------
+# [GENERATOR] : Operation : 1 iteration : 4
+# [DRIVER] : DATA WRITE  data : 6
+# [MONITOR] : Wr:1 rd:0 din:6 dout:5 full:0 empty:1
+# [SCOREBOARD] : Wr:1 rd:0 din:6 dout:5 full:0 empty:1
+# [SCOREBOARD] : DATA STORED IN QUEUE :6
+# --------------------------------------
+# [GENERATOR] : Operation : 0 iteration : 5
+# [DRIVER] : DATA READ
+# [MONITOR] : Wr:0 rd:1 din:6 dout:6 full:0 empty:0
+# [SCOREBOARD] : Wr:0 rd:1 din:6 dout:6 full:0 empty:0
+# [SCOREBOARD] : DATA MATCH
+# --------------------------------------
+# [GENERATOR] : Operation : 0 iteration : 6
+# [DRIVER] : DATA READ
+# [MONITOR] : Wr:0 rd:1 din:6 dout:6 full:0 empty:1
+# [SCOREBOARD] : Wr:0 rd:1 din:6 dout:6 full:0 empty:1
+# [SCO] : FIFO IS EMPTY
+# --------------------------------------
+# [GENERATOR] : Operation : 1 iteration : 7
+# [DRIVER] : DATA WRITE  data : 8
+# [MONITOR] : Wr:1 rd:0 din:8 dout:6 full:0 empty:1
+# [SCOREBOARD] : Wr:1 rd:0 din:8 dout:6 full:0 empty:1
+# [SCOREBOARD] : DATA STORED IN QUEUE :8
+# --------------------------------------
+# [GENERATOR] : Operation : 0 iteration : 8
+# [DRIVER] : DATA READ
+# [MONITOR] : Wr:0 rd:1 din:8 dout:8 full:0 empty:0
+# [SCOREBOARD] : Wr:0 rd:1 din:8 dout:8 full:0 empty:0
+# [SCOREBOARD] : DATA MATCH
+# --------------------------------------
+# [GENERATOR] : Operation : 0 iteration : 9
+# [DRIVER] : DATA READ
+# [MONITOR] : Wr:0 rd:1 din:8 dout:8 full:0 empty:1
+# [SCOREBOARD] : Wr:0 rd:1 din:8 dout:8 full:0 empty:1
+# [SCO] : FIFO IS EMPTY
+# --------------------------------------
+# [GENERATOR] : Operation : 0 iteration : 10
+# [DRIVER] : DATA READ
+# [MONITOR] : Wr:0 rd:1 din:8 dout:8 full:0 empty:1
+# [SCOREBOARD] : Wr:0 rd:1 din:8 dout:8 full:0 empty:1
+# [SCO] : FIFO IS EMPTY
+# --------------------------------------
+# ---------------------------------------------
+# Error Count :0
+# ---------------------------------------------
+# ** Note: $finish    : complete_testbench.sv(300)
+#    Time: 690 ns  Iteration: 3  Instance: /tb
+# End time: 18:03:41 on Aug 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+End time: 18:03:41 on Aug 16,2026, Elapsed time: 0:00:02
+*** Summary *********************************************
+    qrun: Errors:   0, Warnings:   0
+    vlog: Errors:   0, Warnings:   0
+    vopt: Errors:   0, Warnings:   0
+    vsim: Errors:   0, Warnings:   0
+  Totals: Errors:   0, Warnings:   0
