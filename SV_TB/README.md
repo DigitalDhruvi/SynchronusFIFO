@@ -30,7 +30,7 @@ SV_TB/
 │
 ├── output/
 │   ├── fifo_waveform.jpeg
-│   └── output.txt
+│   └── console_prints.txt
 │
 └── README.md
 ```
